@@ -8,5 +8,5 @@ array=($(dig imujer.com +short))
 for i in "${array[@]}"
 do
 echo "$i"
-wget http://imujer.com?mail=eduardoriveror@gmail.com?recorda="$i"
+wget http://$1?mail=$2?recorda="$i"
 done
